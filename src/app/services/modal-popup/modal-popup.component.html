@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>&nbsp;&nbsp;&nbsp;&nbsp; Tell Us More About You ..! &nbsp;&nbsp;&nbsp;&nbsp;</h1>
+<div mat-dialog-content>
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Full Name">
+          <mat-hint>Your full name</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Conatct No.</mat-label>
+          <input matInput placeholder="Contact Number">
+          <mat-hint>We will contact you on this number.</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Email Address</mat-label>
+          <input matInput placeholder="Email">
+          <mat-hint>This email will be used to contact you.</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Required Service</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="food">
+            <mat-option *ngFor="let service of AllServices" [value]="service.value">
+              {{service.name}}
+            </mat-option>
+          </mat-select>
+          <mat-hint>Please select the required service</mat-hint>
+        </mat-form-field>
+      </p>
+</div>

@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { ModalPopupComponent } from '../../modal-popup/modal-popup.component';
+
+
+export interface DialogData {
+  animal: 'panda' | 'unicorn' | 'lion';
+}
 
 @Component({
   selector: 'app-settling-tank',
@@ -7,9 +14,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettlingTankComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  openDialog() {
+    this.dialog.open(ModalPopupComponent, {
+     width: '70%'
+    });
+  }
 }
+
+

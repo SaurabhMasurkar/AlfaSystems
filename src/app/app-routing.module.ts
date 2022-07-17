@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us/about-us.component';
 import { ContactComponent } from './contact-us/contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { ModalComponent } from './pages/modal/modal.component';
 import { BuildingTerraceComponent } from './services/building-terrace/building-terrace/building-terrace.component';
 import { FloorComponent } from './services/floor/floor/floor.component';
 import { OpenWellComponent } from './services/open-well/open-well/open-well.component';
@@ -14,8 +13,6 @@ import { UndergroundTankComponent } from './services/water_storage/underground-t
 import { WaterStorageTankComponent } from './services/water_storage/water-storage-tank/water-storage-tank.component';
 
 const routes: Routes = [
-  { path : 'modal',
-    component: ModalComponent},
     { path : '',
     component: HomeComponent},
     { path : 'home',

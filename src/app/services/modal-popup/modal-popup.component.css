@@ -1,0 +1,11 @@
+.mat-form-field-wrapper{
+    padding:0px
+}
+
+mat-hint{
+    width: 100%;
+}
+
+mat-form-field{
+    width: 100%;
+}

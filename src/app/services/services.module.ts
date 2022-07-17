@@ -5,6 +5,10 @@ import { PlasticTankComponent } from './water_storage/plastic-tank/plastic-tank.
 import { WaterStorageTankComponent } from './water_storage/water-storage-tank/water-storage-tank.component';
 import { OverheadTankComponent } from './water_storage/overhead-tank/overhead-tank.component';
 import { UndergroundTankComponent } from './water_storage/underground-tank/underground-tank.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 
@@ -15,10 +19,17 @@ import { UndergroundTankComponent } from './water_storage/underground-tank/under
     PlasticTankComponent,
     WaterStorageTankComponent,
     OverheadTankComponent,
-    UndergroundTankComponent
+    UndergroundTankComponent,
+    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatFormFieldModule,
+  ],
+
+  exports: [
   ]
 })
 export class ServicesModule { }

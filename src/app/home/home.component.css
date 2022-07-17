@@ -5,3 +5,13 @@
 .row{
     margin-top: 5px;
 }
+
+logo {
+    width: 10px;
+    height: 10px;
+    border: medium none;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}

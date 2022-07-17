@@ -1,5 +1,5 @@
 .left{
-    padding: 80px;
+    padding: 10px;
 }
 
 .right{
@@ -16,6 +16,8 @@
 table{
     padding-bottom: 30px;
     padding-top: 50px;
+    border: 5px;
+    border-color: aliceblue;
 }
 
 h1{
@@ -35,5 +37,5 @@ h3{
 }
 
 b1{
-    padding:50px;
+    padding:10px;
 }
