@@ -1,35 +1,73 @@
-<h1 mat-dialog-title>&nbsp;&nbsp;&nbsp;&nbsp; Tell Us More About You ..! &nbsp;&nbsp;&nbsp;&nbsp;</h1>
-<div mat-dialog-content>
-    <p>
-        <mat-form-field appearance="outline">
-          <mat-label>Name</mat-label>
-          <input matInput placeholder="Full Name">
-          <mat-hint>Your full name</mat-hint>
-        </mat-form-field>
+<div class="container">
+  <!-- <h2 >{{data}}</h2> -->
+  <div class="flex-container">
+    <button mat-button class="close-icon" [mat-dialog-close]="true">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-4">
+      <img src="../../../assets/Images/modal_images.jpeg" class="w-100" alt="company logo">
+      <br><br>
+      <h5>Alfa Cleaning Systems</h5>
+      <p>Mumbai, Maharashtra</p>
+      <br><br>
+      <h6>Contact:</h6>
+      <p>Dinesh Satavase
+        <br>+91 8048205820
       </p>
-      <p>
-        <mat-form-field appearance="outline">
-          <mat-label>Conatct No.</mat-label>
-          <input matInput placeholder="Contact Number">
-          <mat-hint>We will contact you on this number.</mat-hint>
-        </mat-form-field>
-      </p>
-      <p>
-        <mat-form-field appearance="outline">
-          <mat-label>Email Address</mat-label>
-          <input matInput placeholder="Email">
-          <mat-hint>This email will be used to contact you.</mat-hint>
-        </mat-form-field>
-      </p>
-      <p>
-        <mat-form-field appearance="outline">
-          <mat-label>Required Service</mat-label>
-          <mat-select [(ngModel)]="selectedValue" name="food">
-            <mat-option *ngFor="let service of AllServices" [value]="service.value">
-              {{service.name}}
-            </mat-option>
-          </mat-select>
-          <mat-hint>Please select the required service</mat-hint>
-        </mat-form-field>
-      </p>
+    </div>
+
+    <div class="col">
+      <h1 mat-dialog-title>Tell Us More About You ..!</h1>
+      <div mat-dialog-content>
+        <form [formGroup]="customerInfoForm" (ngSubmit)="customerInfo()">
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="Full Name" formControlName="customer_name">
+              <mat-error *ngIf="customer_name && customer_name.invalid && customer_name.touched">Please Enter your Full
+                Name</mat-error>
+              <mat-hint>Your full name</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Conatct No.</mat-label>
+              <input matInput placeholder="Contact Number" formControlName="contact_no">
+              <mat-error *ngIf="contact_no && contact_no.invalid && contact_no.touched">Please enter valid Contact
+                number</mat-error>
+              <mat-hint>We will contact you on this number.</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Email Address</mat-label>
+              <input matInput placeholder="Email" formControlName="email">
+              <mat-error *ngIf="email && email.invalid && email.touched">Invalid Email</mat-error>
+              <mat-hint>This email will be used to contact you.</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Required Service</mat-label>
+              <mat-select [(ngModel)]="selectedValue" name="food" formControlName="req_service">
+                <mat-option *ngFor="let service of AllServices" [value]="service.value">
+                  {{service.name}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="req_service && req_service.invalid && req_service.touched">Please select a required
+                service</mat-error>
+              <mat-hint>Please select the required service</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <button type="button" #SubmitButton class="btn btn-primary btn-lg b1"
+              [disabled]="customerInfoForm.invalid" data-toggle="tooltip" data-placement="top" title="Please Fill All the Fields">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>

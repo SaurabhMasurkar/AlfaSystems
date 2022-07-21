@@ -9,3 +9,28 @@ mat-hint{
 mat-form-field{
     width: 100%;
 }
+
+h2{
+    text-align: center;
+    padding-bottom : 20px;
+    color : blue
+}
+
+.mat-dialog-title{
+    text-align: center;
+}
+
+.b1{
+    width: 100%
+}
+
+.flex-container { 
+    display: flex;
+    float: right;
+    top:-24px;
+    right:-24px;
+}
+
+.btn[disabled] {
+    pointer-events: all !important;
+   }

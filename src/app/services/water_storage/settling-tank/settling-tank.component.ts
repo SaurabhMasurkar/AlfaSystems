@@ -21,7 +21,9 @@ export class SettlingTankComponent implements OnInit {
 
   openDialog() {
     this.dialog.open(ModalPopupComponent, {
-     width: '70%'
+     width: '70%',
+     height: '80%',
+     data: 'Settling Tank Cleaning Service'
     });
   }
 }
