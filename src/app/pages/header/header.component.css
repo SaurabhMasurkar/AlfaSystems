@@ -65,3 +65,30 @@ li > ul
 .dropdown-item{
     color: #f8f9fa;
 }
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.FM_ds1{
+    margin-right: 20px;
+}
+
+.Titledetail{
+    font-size:small;
+}
+
+.icon-display {
+    transform: scale(0.8);
+    padding-top: 3px;
+    position: relative;
+    vertical-align: bottom;
+ }
+
+ .span-display{
+    position: relative;
+ }
+
+ .submenu{
+    margin-left: -150px;
+ }

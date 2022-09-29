@@ -73,7 +73,7 @@
   
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 5px }
   
   p {
     margin-top: 0;
@@ -305,7 +305,7 @@
   
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
     font-weight: 500;
     line-height: 1.2; }
   
@@ -8223,6 +8223,7 @@
       .footer-07 .footer-heading .logo {
         color: #fff; }
     .footer-07 .menu {
+      margin-top: 30px;
       margin-bottom: 30px; }
       .footer-07 .menu a {
         color: rgba(255, 255, 255, 0.6);

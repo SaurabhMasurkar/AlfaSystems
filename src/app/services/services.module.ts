@@ -8,6 +8,7 @@ import { UndergroundTankComponent } from './water_storage/underground-tank/under
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -27,6 +28,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatDialogModule,
     MatButtonModule,
     MatFormFieldModule,
+    RouterModule
   ],
 
   exports: [

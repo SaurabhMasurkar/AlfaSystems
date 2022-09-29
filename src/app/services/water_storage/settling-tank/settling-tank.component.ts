@@ -1,6 +1,8 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { RouterLink } from '@angular/router';
 import { ModalPopupComponent } from '../../modal-popup/modal-popup.component';
+import { Router } from '@angular/router';
 
 
 export interface DialogData {
@@ -14,7 +16,7 @@ export interface DialogData {
 })
 export class SettlingTankComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -26,6 +28,21 @@ export class SettlingTankComponent implements OnInit {
      data: 'Settling Tank Cleaning Service'
     });
   }
+
+  navigateToPlasticWater(){
+    this.router.navigateByUrl('/plastic-tank');
+  }
+  navigateToWaterStorageTank(){
+    this.router.navigateByUrl('/storage-tank');
+  }
+  navigateToBigOverheadTank(){
+    this.router.navigateByUrl('/overhead-tank');
+  }
+  navigateToBigUnderground(){
+    this.router.navigateByUrl('/underground-tank');
+  }
+
+
 }
 
 

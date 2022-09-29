@@ -5,15 +5,17 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid bg">
-    <img class="logo" src="../../../assets/Images/logo3.png"
-      alt="Alfa Cleaning Systems" class="FM_ds1">
-    <a class="navbar-brand" href="#">Alfa Cleaning Systems</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    <img class="FM_ds1" src="../../../assets/Images/logo3.png"
+      alt="Alfa Cleaning Systems" >
+    <a class="navbar-brand" href="#">
+      <h3>Alfa Cleaning Systems</h3>
+    <p class="Titledetail"><mat-icon class="icon-display">location_on</mat-icon><span class="span-display">Bhandup West, Mumbai, Maharashtra</span>  | <mat-icon class="icon-display">verified_user</mat-icon><span class="span-display">GST <strong>7AAOFA7537Q2ZK</strong></span></p></a>
+    <!-- <button class="navbar-toggler d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    </button> -->
+    <div class="collapse navbar-collapse d-flex " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -24,12 +26,12 @@
             Services
           </a>
 
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li class="dropdown-submenu">
-              <a tabindex="-1" class="dropdown-item" href="#">Water Storage Tanks Cleaning Services
+          <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+            <li class="dropdown-submenu ">
+              <a tabindex="-1" class="dropdown-item " href="#">Water Storage Tanks Cleaning Services
               </a>
-              <ul class="dropdown-menu">
-                <li><a tabindex="-1" class="dropdown-item" routerLink="/settling-tank">Settling Tank Cleaning
+              <ul class="dropdown-menu dropleft">
+                <li><a tabindex="-1" class="dropdown-item " routerLink="/settling-tank">Settling Tank Cleaning
                     Service</a></li>
                 <li><a tabindex="-1" class="dropdown-item" routerLink="/plastic-tank">Plastic Water Storage Tanks
                     Cleaning Service</a></li>
@@ -44,28 +46,29 @@
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Building Terrace Cleaning Service</a></li>
+            <li><a tabindex="-1" class="dropdown-item" routerLink="/building-terrace">Building Terrace Cleaning Service</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Open Well Cleaning Service</a></li>
+            <li><a tabindex="-1" class="dropdown-item" routerLink="/open-well">Open Well Cleaning Service</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Floor Cleaning Service</a></li>
+            <li><a tabindex="-1" class="dropdown-item" routerLink="/floor">Floor Cleaning Service</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" routerLink="/aboutUs">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" routerLink="/contactUs">Contact Us</a>
         </li>
       </ul>
-      <form class="d-flex">
+      <button type="button" class="btn btn-success me-2" (click)="openDialog()">Send Request</button>
+      <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </form> -->
     </div>
   </div>
 </nav>

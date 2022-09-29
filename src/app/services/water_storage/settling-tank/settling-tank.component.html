@@ -2,10 +2,10 @@
   <div class="row justify-content-md-center">
     <h1 style="text-align:center">Settling Tank Cleaning Services</h1>
     <div class="col-6 justify-content-md-center left">
-      <img src="../../assets/Images/image3.jpg" class="w-100" alt="...">
+      <img src="../../assets/Images/settling.jpg" class="w-100" alt="...">
     </div>
     <div class="col-6 right">
-      
+
       <table class="table table-bordered">
         <tbody>
           <tr>
@@ -45,8 +45,8 @@
         </p>
       </span>
       <div class="d-grid gap-2">
-      <button type="button" class="btn btn-success btn-lg b1" (click)="openDialog()">I am Interested!</button>
-    </div>
+        <button type="button" class="btn btn-success btn-lg b1" (click)="openDialog()">I am Interested!</button>
+      </div>
     </div>
   </div>
 
@@ -56,37 +56,48 @@
         Explore More Categories
       </h3>
     </span>
-    <div class="col-4">
-      <div class="card" style="width: 18rem;">
-        <a routerLink="/underground-tank">
-        <img src="../../assets/Images/image3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Building Terrace Cleaning Service</h5>
-          <p class="card-text">1 Service Available</p>
-        </div>
-      </a>
+    <div class="col-3">
+      <div class="card" style="width: 15rem;">
+        <a (click)="navigateToPlasticWater()">
+          <img src="../../assets/Images/plastic.jpg" height="130px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plastic Water Storage Tanks Cleaning Services</h5>
+            <!-- <p class="card-text">1 Service Available</p> -->
+          </div>
+        </a>
       </div>
     </div>
-    <div class="col-4">
-      <div class="card" style="width: 18rem;">
-        <a routerLink="/underground-tank">
-        <img src="../../assets/Images/image3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Building Terrace Cleaning Service</h5>
-          <p class="card-text">1 Service Available</p>
-        </div>
-      </a>
+    <div class="col-3">
+      <div class="card" style="width: 15rem;">
+        <a (click)="navigateToWaterStorageTank()">
+          <img src="../../assets/Images/water-storage.png" height="130px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Water Storage Tank Cleaning Service</h5>
+            <!-- <p class="card-text">1 Service Available</p> -->
+          </div>
+        </a>
       </div>
     </div>
-    <div class="col-4">
-      <div class="card" style="width: 18rem;">
-        <a routerLink="/underground-tank">
-        <img src="../../assets/Images/image3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Building Terrace Cleaning Service</h5>
-          <p class="card-text">1 Service Available</p>
-        </div>
-      </a>
+    <div class="col-3">
+      <div class="card" style="width: 15rem;">
+        <a (click)="navigateToBigOverheadTank()">
+          <img src="../../assets/Images/overhead.jpg" height="130px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Big Overhead Tank Cleaning Service</h5>
+            <!-- <p class="card-text">1 Service Available</p> -->
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 15rem;">
+        <a (click)="navigateToBigUnderground()">
+          <img src="../../assets/Images/underground.jpg" height="130px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Big Underground Tank Cleaning Service</h5>
+            <!-- <p class="card-text">1 Service Available</p> -->
+          </div>
+        </a>
       </div>
     </div>
   </div>

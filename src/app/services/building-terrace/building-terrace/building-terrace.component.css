@@ -1,0 +1,46 @@
+.left{
+    padding: 10px;
+}
+
+.right{
+    padding-top: 10px;
+    padding-right: 50px;
+}
+
+.main{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+table{
+    padding-bottom: 30px;
+    padding-top: 50px;
+    border: 5px;
+    border-color: aliceblue;
+}
+
+h1{
+    padding-bottom: 20px;
+}
+
+.cards{
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+h3{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+b1{
+    padding:10px;
+}
+
+h5{
+    font-size:medium;
+    text-align: center;
+}

@@ -2,6 +2,10 @@
     height: 80vh !important;
 }
 
+.slide{
+    margin-bottom: 5%;
+
+}
 .row{
     margin-top: 5px;
 }
@@ -14,4 +18,57 @@ logo {
     margin: 0;
     padding: 0;
     vertical-align: middle;
+}
+
+.carousel-style{
+    margin: 0 15%;
+}
+
+h4{
+    color:rgb(0, 0, 137);
+    background-color: rgb(247, 241, 172);
+    border-radius: 15px;
+    padding: 0;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.video{
+    margin:5%;
+    margin-top: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+iframe{
+    margin-top: 20px;
+}
+
+.about{
+    text-align: center;
+    margin: 5% 0%;
+    text-justify: auto;
+    
+}
+
+.row{
+    text-align: center;
+}
+
+mat-icon{
+    transform: scale(3);
+    padding-top: 4%;
+    padding-left: 5%;
+}
+
+.inside-card{
+    padding-left: 15%;
+}
+
+.card{
+    border-radius: 5px;
+    backdrop-filter: blur(14px);
+    background-color: #ffffff4a;
 }

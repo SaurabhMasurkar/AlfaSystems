@@ -1,1 +1,89 @@
-<p>contact works!</p>
+<div class="container ">
+
+  <!-- <h2 >{{data}}</h2> -->
+  <div class="row justify-content-center">
+
+    <div class="col-6 m-3 card elevation">
+      <h1 class="m-3" mat-dialog-title>Tell Us Your Requirement</h1>
+      <div mat-dialog-content>
+        <form [formGroup]="customerInfoForm" (ngSubmit)="customerInfo()">
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="Full Name" formControlName="customer_name">
+              <mat-error *ngIf="customer_name && customer_name.invalid && customer_name.touched">Please Enter your Full
+                Name</mat-error>
+              <mat-hint>Your full name</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Conatct No.</mat-label>
+              <input matInput placeholder="Contact Number" formControlName="contact_no">
+              <mat-error *ngIf="contact_no && contact_no.invalid && contact_no.touched">Please enter valid Contact
+                number</mat-error>
+              <mat-hint>We will contact you on this number.</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Email Address</mat-label>
+              <input matInput placeholder="Email" formControlName="email">
+              <mat-error *ngIf="email && email.invalid && email.touched">Invalid Email</mat-error>
+              <mat-hint>This email will be used to contact you.</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Required Service</mat-label>
+              <mat-select [(ngModel)]="selectedValue" name="food" formControlName="req_service">
+                <mat-option *ngFor="let service of AllServices" [value]="service.value">
+                  {{service.name}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="req_service && req_service.invalid && req_service.touched">Please select a required
+                service</mat-error>
+              <mat-hint>Please select the required service</mat-hint>
+            </mat-form-field>
+          </p>
+          <p>
+            <button type="button" #SubmitButton class="btn btn-primary btn-lg b1" [disabled]="customerInfoForm.invalid"
+              data-toggle="tooltip" data-placement="top" title="Please Fill All the Fields">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-6 m-3 card elevation justify-content-center">
+      <div class="ps-3">
+        <h1 class="" mat-dialog-title>Reach Us</h1>
+        <div class="ps-5 pe-5 pt-2 card c1">
+          <p>
+            B-604,SHRAMIK CHS LTD, SIXTH, Mumbai Suburban,<br>
+            TP Road, Ashok Kedare Chowk, Bhandup West,<br>
+            Mumbai-400078, Maharashtra, India
+          </p>
+          <p>
+            <strong>Dinesh Satavase (Partner)</strong>
+            <br>
+            Call: 08048205820
+          </p>
+        </div>
+      </div>
+      <div class="ms-4">
+        <h1 class="m-3 mt-5" mat-dialog-title>Additional Information</h1>
+        <div class="card ps-5 pe-5 pt-2 c1">
+          <h4>
+            Head Office
+          </h4>
+          <p>
+            <strong>Pradeep Nimbalkar</strong><br>
+            101/ A, Palm Spring Apartment, Dange Complex,<br>
+            Nalasopara (West), Palghar, West Mumbai, India
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

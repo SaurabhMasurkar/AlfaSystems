@@ -1,0 +1,29 @@
+.card{
+    background-color: rgb(197, 247, 247);
+}
+
+h2{
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+table{
+  
+    border-color: black;
+    font-weight: bold;
+    align-self: center;
+    margin: 0px auto
+}
+
+td{
+    padding-left: 100px;
+    margin-left: 100px;
+   
+}
+
+.table-align{
+    margin: auto;
+}
+
+.card{
+    box-shadow: rgba(49, 143, 252, 0.886) -5px 5px, rgba(12, 5, 119, 0.3) -10px 10px, rgba(29, 4, 249, 0.2) -15px 15px, rgba(88, 46, 240, 0.1) -20px 20px, rgba(82, 46, 240, 0.05) -25px 25px;}
