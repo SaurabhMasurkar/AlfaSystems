@@ -43,3 +43,6 @@ h2 {
 width: fit-content;
 }
 
+.mat-dialog-content {
+     margin: 0 ;
+}
