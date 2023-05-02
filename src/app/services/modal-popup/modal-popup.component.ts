@@ -12,9 +12,9 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 export class ModalPopupComponent implements OnInit {
   selectedValue : string;
 
-  customerInfoForm = new FormGroup({
+  customerInfoForm : FormGroup = new FormGroup({
     customer_name : new FormControl('', [Validators.required,Validators.minLength(10)]),
-    contact_no : new FormControl('', [Validators.required, Validators.maxLength(10)] ),
+    contact_no : new FormControl('', [Validators.required, Validators.maxLength(10), Validators.minLength(10), Validators.pattern("^[0-9]*$")] ),
     email : new FormControl('', [Validators.required, Validators.email ] ),
     req_service : new FormControl('', Validators.required  ),
   })

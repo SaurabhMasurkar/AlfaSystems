@@ -109,13 +109,18 @@
         </div>
 
         <div class="col-12 card  m-2 mt-5 p-5">
-            <h2 class="text-center pt-2"><strong>Brands We Deal In</strong></h2>
-            <p><strong>
-                    <ul class="ps-5 ms-5">
-                        <li>AESTR, etc</li>
-                       
-                    </ul>
-                </strong> </p>
+            <h2 class="text-center pt-2"><strong>Our Clients</strong></h2>
+        
+                    <table class="table table-striped">
+                        <tbody >
+                            <tr *ngFor="let client of client_list; let i =index">
+                                <td scope="row">{{i+1}}</td>
+                                <td scope="row">{{client[0]}}</td>
+                                <td scope="row">{{client[1]}}</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
         </div>
 
     </div>

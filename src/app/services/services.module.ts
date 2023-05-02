@@ -9,6 +9,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 
@@ -28,7 +29,8 @@ import { RouterModule } from '@angular/router';
     MatDialogModule,
     MatButtonModule,
     MatFormFieldModule,
-    RouterModule
+    RouterModule,
+    BrowserModule
   ],
 
   exports: [

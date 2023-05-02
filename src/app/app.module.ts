@@ -16,6 +16,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import { ContactComponent } from './contact-us/contact/contact.component';
+import { ServicesModule } from './services/services.module';
+import { AboutUsModule } from './about-us/about-us.module';
 
 
 
@@ -42,7 +44,9 @@ import { ContactComponent } from './contact-us/contact/contact.component';
     MatSelectModule,
     FormsModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ServicesModule,
+    AboutUsModule
   ],
   exports: [
     MatDialogModule,
