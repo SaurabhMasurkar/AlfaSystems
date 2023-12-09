@@ -105,5 +105,8 @@
       }
     }
   },
-  "defaultProject": "Alfa_Systems"
+  "defaultProject": "Alfa_Systems",
+  "cli": {
+    "analytics": "9159bfdb-b330-4951-8426-d309aaec7734"
+  }
 }

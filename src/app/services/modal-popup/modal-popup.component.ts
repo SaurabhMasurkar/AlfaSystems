@@ -3,6 +3,7 @@ import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { DialogData } from '../water_storage/settling-tank/settling-tank.component';
 import { CommonDataService } from '../../common-data.service'
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-modal-popup',
@@ -49,7 +50,17 @@ export class ModalPopupComponent implements OnInit {
     return this.customerInfoForm.get('req_service')
   }
 
-  customerInfo(){
+   customerInfo(){
     console.log(this.customerInfoForm.value)
+    emailjs.init('qIsag1QfMgtl6AnYN')
+    emailjs.send("service_37ms593","template_radnta9",{
+      contact_no: this.customerInfoForm.value.contact_no,
+      req_service: this.customerInfoForm.value.req_service,
+      customer_name: this.customerInfoForm.value.customer_name,
+      email: this.customerInfoForm.value.email,
+      });
+
+      // alert("Message sent")
+      // this.customerInfoForm.reset()
   }
 }
