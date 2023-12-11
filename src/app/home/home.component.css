@@ -72,3 +72,7 @@ mat-icon{
     backdrop-filter: blur(14px);
     background-color: #ffffff4a;
 }
+
+.carousel-control-next, .carousel-control-prev{
+    top:80px !important;
+}

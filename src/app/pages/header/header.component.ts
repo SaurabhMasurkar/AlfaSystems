@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
     this.dialog.open(ModalPopupComponent, {
      width: '70%',
      height: '80%',
-    
+     data : 'abc'
     });
   }
 }

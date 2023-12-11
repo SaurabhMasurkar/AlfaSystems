@@ -60,7 +60,6 @@ export class ModalPopupComponent implements OnInit {
       email: this.customerInfoForm.value.email,
       });
 
-      // alert("Message sent")
-      // this.customerInfoForm.reset()
+      alert("Our Team will contact you on details you provided soon..!")
   }
 }
